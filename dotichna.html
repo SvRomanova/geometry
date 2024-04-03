@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="files/icon.png" type="image/x-icon">
+    <title>Дотична до кола</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3); /* Градієнт від зеленого до синього */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #e6fffa;
+            font-family: Alice;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            padding: 10px 75px 10px 75px;
+            margin: 4px;
+            text-decoration: none;
+            background-color: #e6fffa;
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: #ccfff5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+        }
+
+        footer {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            padding: 5px;
+        }
+
+
+        section {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+        }
+
+        .information {
+            border: 4px dashed #00b38f;
+            background-color: #e6fffa;
+            font-weight: bold;
+            padding:10px;
+            border-radius: 20px;
+        }
+
+        span {
+            font-weight: bold;
+            color: #008066;
+        }
+
+        li::before {
+            font-weight: bold;
+        }
+
+        table, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><b>ДОТИЧНА ДО КОЛА</b></h1>
+        <nav>
+            <a href="main.html" target="_blank">Головна</a>
+            <a href="dotichna.html" target="_blank">Дотична до кола</a>
+            <a href="described_and_inscribed.html" target="_blank">	Описане та вписане кола трикутника</a>
+            <a href="test.html" target="_blank">Контрольна робота</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <p class="information"><i>На площині пряма і коло можуть перетинатися або не перетинатися. <br>При перетині вони можуть мати одну або дві спільні точки.</i></p>
+            <ol>
+                <li>
+                    Якщо відстань від центра кола до прямої більша від радіуса, то в прямої і кола немає спільних точок.<br>
+                    <img src="https://resources.cdn.miyklas.com.ua/13dd99db-bd1b-4552-99c7-a1c86f94ff67/Taisnes_nov2.png">
+                </li>
+                <li>
+                    Якщо відстань від центра кола до прямої менша від радіуса, то в прямої і кола дві спільні точки.<br>
+                    <img src="https://resources.cdn.miyklas.com.ua/aec2dc77-c5d5-4a6f-90d5-a5c1f0896539/Taisnes_nov.png"><br>
+                    У цьому випадку пряму називають <span>січною кола.</span>
+                </li>
+            </ol>
+            <p class="information"><i>Якщо пряма має дві спільні точки з колом, то вона називається <span>січною.</span></i></p>
+            <ol start="3">
+                <li>
+                    Якщо відстань від центра кола до прямої дорівнює радіусу, то в прямої і кола одна спільна точка.<br>
+                    <img src="https://resources.cdn.miyklas.com.ua/e8381d51-fc98-40fd-8f85-42fb2c48211e/Taisnes_nov1.png"><br>
+                    У цьому випадку пряму називають дотичною до кола.
+                </li>
+            </ol>
+            <p class="information"><i><span>Дотичною до кола</span> називається пряма, що має з колом одну спільну точку.</i></p>
+        </section>
+
+
+        <section>
+            <p class="information"><i>Дотична до кола перпендикулярна радіусу, проведеному до точки дотику.</i></p>
+            <img src="https://resources.cdn.miyklas.com.ua/d9408386-25f2-4680-a27f-10a26229c644/Pieskares_ip.png">
+            <p>Припустимо, що радіус <span>OA</span> не перпендикулярний до прямої, але є похилим. Тоді з точки <span>O</span> можна провести перпендикуляр до прямої, який буде коротшим, ніж радіус.</p>
+            <p>Це означає, що відстань від центра кола до прямої менша від радіуса, і в прямої та кола повинні бути дві спільні точки. Але це суперечить умові, тож наше припущення неправильне.</p>
+            <br>
+            <table>
+                <tr>
+                    <td colspan="2" style="text-align: center; font-weight: bold; background-color: #e6fffa;">Якщо з точки до кола проведено дві дотичні, то:</td>
+                </tr>
+                <tr>
+                    <td>a)</td>
+                    <td>довжини відрізків дотичних від цієї точки до точки дотику рівні;</td>
+                </tr>
+                <tr>
+                    <td>b)</td>
+                    <td>пряма, що проходить через центр кола і цю точку, ділить кут між дотичними навпіл.</td>
+                </tr>
+            </table>
+
+            <img src="https://resources.cdn.miyklas.com.ua/6cb2f8e8-ef3d-47c2-b2bf-ef480a4945a8/Pieskaru_ip.png">
+            <p>Нехай <span>AB</span> та <span>AC</span> — дотичні до кола з центром <span>O</span>. Потрібно довести, що <span>AB=AC</span> та <span>OA</span> є бісектрисою кута <span>A</span>.</p>
+            <p>Трикутники <span>OBA</span> та <span>OCA</span> — прямокутні, оскільки дотичні перпендикулярні до радіусів кола у точках <span>B</span> та <span>C</span>. Сторона <span>OA</span> — спільна. Катети <span>OB</span> та <span>OC</span> рівні як радіуси одного й того самого кола. Трикутники рівні за гіпотенузою та катетом, звідси рівні й катети <span>AB</span> та <span>AC</span>, а також кути <span>BAO</span> і <span>CAO</span>, тобто <span>OA</span> ділить кут навпіл.</p>
+        </section>
+
+    </main>
+
+    <footer id="contacts">
+        <p><img src="files/gmail.png" width="20px" height="20px"><b> Електронна пошта:</b> svetlanaromanova734@gmail.com</p>
+        <p><img src="files/telegram.png" width="25px" height="25px"><b> Телеграм</b> @TeachRomanova</p>
+        <p><img src="files/instagram.png" width="20px" height="20px"><b> Інстаграм</b> @s.romanova_21</p>
+    </footer>
+
+</body>
+</html>

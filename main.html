@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="files/icon.png" type="image/x-icon">
+    <title>Коло і круг</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3); /* Градієнт від зеленого до синього */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #e6fffa;
+            font-family: Alice;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            padding: 10px 75px 10px 75px;
+            margin: 4px;
+            text-decoration: none;
+            background-color: #e6fffa;
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: #ccfff5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+        }
+
+        footer {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            padding: 5px;
+        }
+
+        #info {
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        #img {
+            display: inline-block;
+            float: right;
+            margin-right: 150px;
+            margin-top: 18px;
+            padding-left: 50px;
+        }
+
+
+        #author {
+            text-align: center;
+            font-size: 18px;
+            padding: 0px 60px 0px 60px;
+        }
+
+        section {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #map {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #00cca3;
+            text-align: center;
+        }
+
+        .merged {
+            background-color: #ccfff5;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><b>КОЛО І КРУГ</b></h1>
+        <nav>
+            <a href="main.html" target="_blank">Головна</a>
+            <a href="dotichna.html" target="_blank">	Дотична до кола</a>
+            <a href="described_and_inscribed.html" target="_blank">	Описане та вписане кола трикутника</a>
+            <a href="test.html" target="_blank">Контрольна робота</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="info">
+            <h3>Анотація до матеріалу з теми <b>"Коло і круг"</b></h3>
+                <p>Матеріал присвячений вивченню основних понять та властивостей кіл і кругів в геометрії. Ви дізнаєтеся, як визначити радіус та діаметр кола, як обчислити його площу та довжину окружності. Зокрема, матеріал охоплює теоретичні аспекти та практичні застосування цих фігур у різних галузях науки та техніки.</p>
+                <p>Окрім того, ви дізнаєтеся про важливість кіл у природі та повсякденному житті, а також про застосування кругових форм у мистецтві та дизайні. Зіставлення з ілюстративними зображеннями та прикладами розширить ваше розуміння теми і покаже практичне застосування здобутих знань.</p>
+                <p>Цей матеріал призначений для широкого кола читачів, незалежно від рівня їхньої математичної підготовки, і стане корисним для всіх, хто цікавиться геометрією та її застосуванням у різних сферах життя.</p>
+            </div>
+            <div id="img">
+                <img width="120%" height="120%" src="files/circle.png" title="Коло">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <div id="author">
+                <h2>Відмінності між колом і кругом</h2>
+
+    <table>
+        <tr>
+            <th>Характеристика</th>
+            <th>Коло</th>
+            <th>Круг</th>
+        </tr>
+        <tr>
+            <td rowspan="3" class="merged">Форма</td>
+            <td>Закрита крива</td>
+            <td class="merged" rowspan="3">Спеціальний випадок кола</td>
+        </tr>
+        <tr>
+            <td>Не обов'язково кругла</td>
+        </tr>
+        <tr>
+            <td>Може мати будь-яку форму</td>
+        </tr>
+        <tr>
+            <td class="merged">Центр</td>
+            <td>Може бути будь-де</td>
+            <td class="merged">Завжди в центрі</td>
+        </tr>
+        <tr>
+            <td class="merged">Радіус</td>
+            <td>Може бути будь-яким</td>
+            <td class="merged">Завжди однаковий</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="merged">Геометрична позначеність</td>
+            <td>Може бути представлено відомими геометричними фігурами</td>
+            <td class="merged" rowspan="3">Завжди представлено кругом</td>
+        </tr>
+        <tr>
+            <td>Може мати різний об'єм і площу</td>
+        </tr>
+        <tr>
+            <td>Має обмежену площу та об'єм</td>
+        </tr>
+    </table>
+
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div id="map">
+                <h2>Інформацію про коло та круг ви можете отримати натиснувши на зображення або напис 👇🏻</h2>
+                <img src="files/img_map.jpg" alt="Коло та круг" usemap="#imagemap">
+
+                <map name="imagemap">
+                  <area shape="rect" coords="200, 200, 400, 400" href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt="Area 1" title="Круг">
+                  <area shape="circle" coords="830,300,200" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BE" alt="Area 2" title="Коло">
+                </map>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacts">
+        <p><img src="files/gmail.png" width="20px" height="20px"><b> Електронна пошта:</b> svetlanaromanova734@gmail.com</p>
+        <p><img src="files/telegram.png" width="25px" height="25px"><b> Телеграм</b> @TeachRomanova</p>
+        <p><img src="files/instagram.png" width="20px" height="20px"><b> Інстаграм</b> @s.romanova_21</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="files/icon.png" type="image/x-icon">
+    <title>Описане та вписане кола трикутника</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3); /* Градієнт від зеленого до синього */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #e6fffa;
+            font-family: Alice;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            padding: 10px 75px 10px 75px;
+            margin: 4px;
+            text-decoration: none;
+            background-color: #e6fffa;
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: #ccfff5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+        }
+
+        footer {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            padding: 5px;
+        }
+
+
+        section {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+        }
+
+        .information {
+            border: 4px dashed #00b38f;
+            background-color: #e6fffa;
+            font-weight: bold;
+            padding:10px;
+            border-radius: 20px;
+        }
+
+        span {
+            font-weight: bold;
+            color: #008066;
+        }
+
+        li::before {
+            font-weight: bold;
+        }
+
+        table, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><b>ОПИСАНЕ ТА ВПИСАНЕ КОЛА ТРИКУТНИКА</b></h1>
+        <nav>
+            <a href="main.html" target="_blank">Головна</a>
+            <a href="dotichna.html" target="_blank">Дотична до кола</a>
+            <a href="described_and_inscribed.html" target="_blank">	Описане та вписане кола трикутника</a>
+            <a href="test.html" target="_blank">Контрольна робота</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Коло, описане навколо трикутника</h1>
+            <p class="information"><i>Коло називається <span>описаним навколо трикутника</span>, якщо всі вершини трикутника розміщені на колі.</i></p>
+            <p>Центр кола рівновіддалений від усіх вершин, тобто повинен розташовуватися в точці перетину серединних перпендикулярів до сторін трикутника.</p>
+            <p>Навколо <span>будь-якого трикутника можна описати коло</span>, оскільки серединні перпендикуляри до сторін перетинаються в одній точці.</p>
+            <img src="files/circle1.png"><br>
+            <p>Для гострокутного трикутника центр кола знаходиться в трикутнику.</p>
+            <p>Інша ситуація з прямокутним і тупокутним трикутниками.</p>
+            <img src="files/circle2_1.png"><img src="files/circle2_2.png"><br>
+        </section>
+
+
+        <section>
+            <h1>Коло, вписане в трикутник</h1>
+            <p class="information"><i>Коло називається <span>вписаним у трикутник</span>, якщо всі сторони трикутника дотикаються до кола.</i></p>
+            <p>Центр кола рівновіддалений від усіх сторін, тобто повинен розміщуватися в точці перетину бісектрис трикутника.</p>
+            <p>У будь-який трикутник можна вписати коло, оскільки бісектриси трикутника перетинаються в одній точці.</p>
+            <img src="files/triangle.png"><br>
+            <p>Оскільки бісектриси кутів трикутника завжди перетинаються всередині трикутника, для всіх трикутників центр уписаного кола розміщується в трикутниках.</p>
+            <p class="information"><i>У рівностороннього трикутника збігаються бісектриси, медіани та висоти, тобто ці відрізки є також серединними перпендикулярами. Це означає, що центри описаного і вписаного кола збігаються.</i></p>
+        </section>
+
+    </main>
+
+    <footer id="contacts">
+        <p><img src="files/gmail.png" width="20px" height="20px"><b> Електронна пошта:</b> svetlanaromanova734@gmail.com</p>
+        <p><img src="files/telegram.png" width="25px" height="25px"><b> Телеграм</b> @TeachRomanova</p>
+        <p><img src="files/instagram.png" width="20px" height="20px"><b> Інстаграм</b> @s.romanova_21</p>
+    </footer>
+
+</body>
+</html>
